@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Ejercicios HTML - COBAEH</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    .cinta {
+      display: flex;
+      width: 200%;
+      height: 100%;
+      animation: mover 10s linear infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .cinta img {
+      width: 25%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .texto {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      color: yellow;
+      font-size: 24px;
+      font-weight: bold;
+      white-space: nowrap;
+      animation: mover 10s linear infinite;
+    }
+    @keyframes mover {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    main {
+      display: flex;
+      flex: 1;
+    }
+    nav {
+      width: 25%;
+      background-color: green;
+      color: white;
+      padding: 20px;
+      min-height: calc(100vh - 200px);
+      text-align: center;
+    }
+    nav h2 {
+      text-align: center;
+    }
+    nav a {
+      color: lightblue;
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+    .contenido {
+      width: 75%;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 200px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="cinta">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png" alt="Computadora 1">
+      <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" alt="Computadora 2">
+      <img src="https://cdn-icons-png.flaticon.com/512/1006/1006555.png" alt="Computadora 3">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Computadora 4">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png" alt="Computadora 1">
+      <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" alt="Computadora 2">
+      <img src="https://cdn-icons-png.flaticon.com/512/1006/1006555.png" alt="Computadora 3">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Computadora 4">
+    </div>
+    <div class="texto">TICS - Portafolio de evidencia - Maria del Consuelo Calva</div>
+  </header>
+
+  <main>
+    <nav>
+      <h2>MENÚ</h2>
+      <a href="file:///E:/estilos.css/Horario.html.HTML" target="visor">Ejercicio 1</a>
+      <a href="file:///E:/estilos.css/cuestionario.html" target="visor">Ejercicio 2</a>
+      <a href="file:///E:/estilos.css/Registro-Maria.index.html" target="visor">Ejercicio 3</a>
+      <a href="file:///E:/estilos.css/Software%20de%20dise%C3%B1o.html" target="visor">Ejercicio 4</a>
+    </nav>
+
+    <div class="contenido">
+      <iframe name="visor" src=""></iframe>
+    </div>
+  </main>
+
+</body>
+</html>
+
+
+
+
+
