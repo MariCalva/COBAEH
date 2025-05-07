@@ -1,0 +1,45 @@
+h1 
+{
+color:purple;
+font-size 15px;
+font-weight:bold;
+}
+
+h2
+{
+color:green;
+font-size 16px;
+font-weight: bold;
+}
+
+th
+{
+color: pink;
+font-size 16px;
+font-weight: bold;
+}
+
+td 
+{ 
+color: maroon;
+font-size 19px;
+font-weight: bold;
+}
+
+input
+{
+color: blue;
+font-size 19px;
+}
+
+label
+{
+color: salmon;
+font-size 20px;
+}
+
+
+body 
+{
+background-color:beige;
+}
